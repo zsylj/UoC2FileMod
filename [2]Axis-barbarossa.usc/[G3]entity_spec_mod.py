@@ -87,4 +87,4 @@ def spec_mod(path,spec_list):
             yaml.dump(temp,f)
         f.closed
 
-spec_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/specialists/",spec_list)
+spec_mod(r"_packages/base/data/entity_types/specialists/",spec_list)
