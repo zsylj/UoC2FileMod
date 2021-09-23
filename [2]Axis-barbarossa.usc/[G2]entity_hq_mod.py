@@ -81,4 +81,4 @@ def hq_mod(path,hq_list):
             yaml.dump(temp,f)
         f.closed
         
-hq_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/hq_types/",hq_list)
+hq_mod(r"_packages/base/data/entity_types/hq_types/",hq_list)
