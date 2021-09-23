@@ -91,11 +91,7 @@ def lut(path):
     f.closed
     return id_list,country_list,faction_list,s_type_list,parent_list,gen_type
 
-id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut("F:/Steam/steamapps/common/Unity of Command 2/_packages/dlc1/data/campaigns/blitzkrieg.usc/units.yml")
-
-
-
-
+id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut(r"_packages/dlc1/data/campaigns/blitzkrieg.usc/units.yml")
 
 
 #unit_segment
@@ -135,7 +131,7 @@ def unit_sgmnt(path):
     #for item in temp:
     #    print(item)
 
-#unit_sgmnt(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios\fall_braun\units.yml")
+#unit_sgmnt(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios\fall_braun\units.yml")
 
 #enroute_segment
 def enroute_sgmnt(path):
@@ -167,7 +163,7 @@ def enroute_sgmnt(path):
         yaml.dump(temp,f)
     f.closed
 
-#enroute_sgmnt(r"D:\Program Files\Steam\steamapps\common\Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios\bryansk\enroute_units.yml")
+#enroute_sgmnt(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios\bryansk\enroute_units.yml")
 
 #prepositioned_assets_segment
 def prepos_sgmnt(path):
@@ -207,7 +203,6 @@ def prepos_sgmnt(path):
         yaml.dump(temp,f)
     f.closed
 
-#
 
 def UoC2(uoc_dir):
     scene_name_list=os.listdir(uoc_dir)
@@ -234,8 +229,7 @@ def UoC2(uoc_dir):
                 prepos_sgmnt(scene_path)
                 print("END")
 
-#temp=UoC2(r"D:\Program Files\Steam\steamapps\common\Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
-temp=UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
+temp=UoC2(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
 
 
 
