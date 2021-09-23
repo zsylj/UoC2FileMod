@@ -35,9 +35,9 @@ Q02: How to run these codes?
 
 问02：这些代码该如何运行？
 
-A02: First, make sure you put them correctly in your local steam file folder. Then run them in current order. zsylj has already put those codes in order, [G0]→[G1]→[G2]→[G3]→[G4]→[G5]→[LG1]→[LG2]→[LS1]→[LS2]→[LS3]→[LS4].
+A02: First, make sure you put them correctly in your local UoC2 file folder. Then run them in current order. zsylj has already put those codes in order, [G0]→[G1]→[G2]→[G3]→[G4]→[G5]→[LG1]→[LG2]→[LS1]→[LS2]→[LS3]→[LS4].
 
-答：首先确保你的代码已经放在了正确的本地steam文件夹中。然后按顺序运行即可。zsylj已经按照顺序将他们排好了， [G0]→[G1]→[G2]→[G3]→[G4]→[G5]→[LG1]→[LG2]→[LS1]→[LS2]→[LS3]→[LS4].
+答：首先确保你的代码已经放在了正确的本地UoC2文件夹中。然后按顺序运行即可。zsylj已经按照顺序将他们排好了， [G0]→[G1]→[G2]→[G3]→[G4]→[G5]→[LG1]→[LG2]→[LS1]→[LS2]→[LS3]→[LS4].
 
 Q03: What are those prefix [G0], [LG1], [LS] menas?
 
