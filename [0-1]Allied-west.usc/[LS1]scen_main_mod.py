@@ -31,4 +31,4 @@ def UoC2(uoc_dir):
                 scene_main_mod(scene_path)
                 print("END")
 
-temp=UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\base\data\campaigns\west.usc\scenarios")
+temp=UoC2(r"_packages\base\data\campaigns\west.usc\scenarios")
