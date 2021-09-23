@@ -75,7 +75,7 @@ def UoC2(uoc_dir):
     print(uk_spec_list)
     print("US_Final")
     print(us_spec_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")#####
+UoC2(r"_packages\base\data\campaigns\tutorial.usc\scenarios")#####
 
 
 def spec_mod(path,uk_spec_list,us_spec_list):
@@ -115,4 +115,4 @@ def spec_mod(path,uk_spec_list,us_spec_list):
             yaml.dump(temp,f)
         f.closed
 
-spec_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/specialists/",uk_spec_list,us_spec_list)
+spec_mod(r"_packages/base/data/entity_types/specialists/",uk_spec_list,us_spec_list)
