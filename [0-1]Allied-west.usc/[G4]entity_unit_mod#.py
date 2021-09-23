@@ -58,7 +58,7 @@ def lut(path):
     f.closed
     return id_list,country_list,faction_list,rr_type_list
 
-id_list,country_list,faction_list,rr_type_list=lut(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/campaigns/west.usc/units.yml")#################
+id_list,country_list,faction_list,rr_type_list=lut(r"_packages/base/data/campaigns/west.usc/units.yml")#################
 
 #
 def unit_mod(path,rr_type_list):
@@ -80,5 +80,4 @@ def unit_mod(path,rr_type_list):
             yaml.dump(temp,f)
         f.closed
 
-#unit_mod(r"D:/Program Files/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/unit_types/",rr_type_list)
-unit_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/unit_types/",rr_type_list)
+unit_mod(r"_packages/base/data/entity_types/unit_types/",rr_type_list)
