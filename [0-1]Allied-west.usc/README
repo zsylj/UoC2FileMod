@@ -12,6 +12,6 @@ Two small bugs need to be fixed
 
 2. Any scenario appears with [nz_arm_43], the [nz_arm_43] cannot be modified. 
 
-The origianl unit should be [nz_inf_42] 
+The original unit should be [nz_inf_42] 
 
 This was because they use an additional [unit_types.yml] file at [west.usc\fronts\italy\segments] change the [nz_inf_42] into [nz_arm_43] outside the DLC [units.yml] file.
