@@ -28,4 +28,4 @@ def config_mod(path):
         yaml.dump(temp,f)
     f.closed
 
-config_mod(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\base\config\game.yml")
+config_mod(r"_packages\base\config\game.yml")
