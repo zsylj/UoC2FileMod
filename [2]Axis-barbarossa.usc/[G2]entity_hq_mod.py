@@ -42,7 +42,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(hq_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
+UoC2(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
 
 def hq_mod(path,hq_list):
     for item in hq_list:
