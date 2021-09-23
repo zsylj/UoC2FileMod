@@ -90,7 +90,7 @@ def lut(path):
     f.closed
     return id_list,country_list,faction_list,s_type_list,parent_list,gen_type
 
-id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut("_packages/base/data/campaigns/france.usc/units.yml")
+id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut(r"_packages/base/data/campaigns/france.usc/units.yml")
 
 #unit_segment
 def unit_sgmnt(path):
