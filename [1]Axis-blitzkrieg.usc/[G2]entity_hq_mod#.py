@@ -81,6 +81,11 @@ def hq_mod(path,hq_list):
                 yaml.dump(temp,f)
             f.closed
         else:
+            #save basic
+            with open(new_path,"w") as f:
+                yaml.dump(temp,f)
+            f.closed
+            #save sub
             difficulties_list=["easy","normal","classic","hard"]
             history_intervals_list=["early","mid","late"]
             for item_hist in history_intervals_list:
