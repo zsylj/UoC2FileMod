@@ -50,5 +50,7 @@ A03: It deeply connect to the game file system. [G] menas globally, run these co
 ========================================================================
 
 P.S. [G0] and [G5] are all the same, to make the code easy to use, zsylj has duplicate them in every folder.
+
 P.S. [G1] should be the card modification, since we have the [LG1] usc_mian_mod.py that can add prestige up to 25000, it is useless to modify the card anymore.
+
 P.S. [G5] only works in barbarossa.usc adding [parent nationality] [German] to [Finland] and [Estonia]
