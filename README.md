@@ -51,6 +51,12 @@ A03: It deeply connect to the game file system. [G] menas globally, run these co
 
 P.S. [G0] and [G5] are all the same, to make the code easy to use, zsylj has duplicate them in every folder.
 
-P.S. [G1] should be the card modification, since we have the [LG1] usc_mian_mod.py that can add prestige up to 25000, it is useless to modify the card anymore.
+附 [G0] 和 [G5] 完全一致，只是出于方便用户使用的原因，zsylj将它们复制粘贴到了每一个文件夹内
 
-P.S. [G5] only works in barbarossa.usc adding [parent nationality] [German] to [Finland] and [Estonia]
+P.S. [G1] should be the card modification, since we have the [LG1]usc_mian_mod.py that can add prestige up to 25000, it is useless to modify the card anymore.
+
+附 [G1]按计划是卡牌修改，但是由于 [LG1]usc_mian_mod.py 中已经将声望修改到了25000，所以修改卡牌就没有必要了。
+
+P.S. [G5] only works in barbarossa.usc adding [parent nationality] [German] to [Finland] and [Estonia] (this means Finland & Estonia now can buy German specialists)_
+
+附 [G5] 只会在巴巴罗萨DLC中起到作用，它在芬兰、爱沙尼亚的国家性质中增加了装备来源国：德国（也就是说芬兰和爱沙尼亚可以购买并携带德国特种战力了）
