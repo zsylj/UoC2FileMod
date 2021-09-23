@@ -42,7 +42,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(hq_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")
+UoC2(r"_packages\base\data\campaigns\tutorial.usc\scenarios")
 
 def hq_mod(path,hq_list):
     difficulties_list=["easy","normal","classic","hard"]
@@ -91,4 +91,4 @@ def hq_mod(path,hq_list):
                     yaml.dump(temp,f)
                 f.closed
         
-hq_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/hq_types/",hq_list)
+hq_mod(r"_packages/base/data/entity_types/hq_types/",hq_list)
