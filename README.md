@@ -46,3 +46,9 @@ Q03: What are those prefix [G0], [LG1], [LS] menas?
 A03: It deeply connect to the game file system. [G] menas globally, run these codes will cause global change (changes happens in every DLC). [LG] means locally global, run these codes will cause global change in DLC (changes only happens in specific DLC). [LS] means locally scenario, run these codes will cause locally change in scenario (changes only happens in specific scenario).
 
 答03：这和文件系统深度相关。 [G] 意味着做出全局改变，运行这些代码将对全局设定做出改变（每个DLC都会有改变）。 [LG] 意味着对特定DLC做出全局改变，运行这些代码将对特定DLC做出全局改变。 [LS] 意味着做出局部场景改变，运行这些代码仅能对特定场景做出改变。
+
+========================================================================
+
+P.S. [G0] and [G5] are all the same, to make the code easy to use, zsylj has duplicate them in every folder.
+P.S. [G1] should be the card modification, since we have the [LG1] usc_mian_mod.py that can add prestige up to 25000, it is useless to modify the card anymore.
+P.S. [G5] only works in barbarossa.usc adding [parent nationality] [German] to [Finland] and [Estonia]
