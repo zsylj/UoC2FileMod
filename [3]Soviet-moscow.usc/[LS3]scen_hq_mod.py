@@ -36,7 +36,7 @@ def scene_hq_mod(path):
         yaml.dump(temp,f)
     f.closed
 
-#scene_hq_mod(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc3\data\campaigns\moscow.usc\scenarios\moscow_defensive\hqs.yml")
+#scene_hq_mod(r"_packages\dlc3\data\campaigns\moscow.usc\scenarios\moscow_defensive\hqs.yml")
 
 def UoC2(uoc_dir):
     scene_name_list=os.listdir(uoc_dir)
@@ -53,4 +53,4 @@ def UoC2(uoc_dir):
                 scene_hq_mod(scene_path)
                 print("END")
 
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc3\data\campaigns\moscow.usc\scenarios")
+UoC2(r"_packages\dlc3\data\campaigns\moscow.usc\scenarios")
