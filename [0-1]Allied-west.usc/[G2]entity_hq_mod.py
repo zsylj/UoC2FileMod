@@ -42,12 +42,9 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(hq_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\base\data\campaigns\west.usc\scenarios")
+UoC2(r"_packages\base\data\campaigns\west.usc\scenarios")
 
 def hq_mod(path,hq_list):
-    difficulties_list=["easy","normal","classic","hard"]
-    history_intervals_list=["early","mid","late"]
-    
     for item in hq_list:
         new_path=path+item+".yml"
         f=open(new_path,"r")
@@ -80,15 +77,24 @@ def hq_mod(path,hq_list):
             temp.update({'fixed_range': 100})
         f.closed
         
-        with open(new_path,"w") as f:
-            yaml.dump(temp,f)
-        f.closed
-
-        for item_hist in history_intervals_list:
-            for item_diff in difficulties_list:
-                new_path2=path+item+"_"+item_hist+"_"+item_diff+".yml"
-                with open(new_path2,"w") as f:
-                    yaml.dump(temp,f)
-                f.closed
+        hq_check_list=["can_hq","ff_hq","ger_hq","hun_hq","ita_hq","uk_hq","us_hq","vichy_hq"]
+        if item not in hq_check_list:
+            with open(new_path,"w") as f:
+                yaml.dump(temp,f)
+            f.closed
+        else:
+            #save basic
+            with open(new_path,"w") as f:
+                yaml.dump(temp,f)
+            f.closed
+            #save sub
+            difficulties_list=["easy","normal","classic","hard"]
+            history_intervals_list=["early","mid","late"]
+            for item_hist in history_intervals_list:
+                for item_diff in difficulties_list:
+                    new_path2=path+item+"_"+item_hist+"_"+item_diff+".yml"
+                    with open(new_path2,"w") as f:
+                        yaml.dump(temp,f)
+                    f.closed
         
-hq_mod(r"F:/Steam/steamapps/common/Unity of Command 2/_packages/base/data/entity_types/hq_types/",hq_list)
+hq_mod(r"_packages/base/data/entity_types/hq_types/",hq_list)
