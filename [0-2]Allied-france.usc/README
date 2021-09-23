@@ -1,1 +1,17 @@
+The Second Front
 
+第二前线
+
+Two small bugs need to be fixed
+
+两个小bug需要修复
+
+1. Code use regex to classify each unity type. And because my regex cannot cover all allied forces, especially the [ita_allied_43]
+
+[id: 585] appears in [lombardy_liguria/units.yml] and [id: 723] appears in [liberation_of_bohemia/enroute_units.yml] 
+
+2. Any scenario appears with [nz_arm_43], the [nz_arm_43] cannot be modified. 
+
+The original unit should be [nz_inf_42] 
+
+This was because they use an additional [unit_types.yml] file at [west.usc\fronts\italy\segments] change the [nz_inf_42] into [nz_arm_43] outside the DLC [units.yml] file.
