@@ -65,7 +65,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(spec_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
+UoC2(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
 
 
 def spec_mod(path,spec_list):
