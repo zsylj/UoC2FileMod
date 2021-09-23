@@ -1,5 +1,5 @@
 # UoC2FileMod
-"Unity of Command Ⅱ" file modify python codes
+"Unity of Command Ⅱ" file modify codes
 
 “统一指挥Ⅱ” 文件修改程序
 
