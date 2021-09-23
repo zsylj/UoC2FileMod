@@ -56,4 +56,4 @@ def UoC2(uoc_dir):
                 fort_mod(scene_path)
                 print("END")
 
-temp=UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc3\data\campaigns\moscow.usc\scenarios")
+temp=UoC2(r"_packages\dlc3\data\campaigns\moscow.usc\scenarios")
