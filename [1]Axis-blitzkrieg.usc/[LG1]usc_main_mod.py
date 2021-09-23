@@ -42,7 +42,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(hq_id_list)
-UoC2(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
+UoC2(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
 
 def usc_main_mod(path,hq_id_list):
     f=open(path,"r")
@@ -56,4 +56,4 @@ def usc_main_mod(path,hq_id_list):
         yaml.dump(temp,f)
     f.closed
 
-usc_main_mod(r"F:\Steam\steamapps\common\Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\main.yml",hq_id_list)
+usc_main_mod(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\main.yml",hq_id_list)
