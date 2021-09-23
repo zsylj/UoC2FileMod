@@ -27,7 +27,7 @@ Q01: What are these codes doing?
 
 问01：这些代码在干什么？
 
-A01: These codes can largely reduce the gameplay difficulties.
+A01: These codes can significantly reduce the gameplay difficulties.
 
 答01：这些代码可以大幅降低游戏难度
 
