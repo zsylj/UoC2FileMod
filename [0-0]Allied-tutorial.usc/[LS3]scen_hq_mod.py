@@ -49,7 +49,6 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\hqs.yml" in scene_path:
-
                 print("F1")
                 scene_hq_mod(scene_path)
                 print("END")
