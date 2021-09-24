@@ -57,11 +57,9 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\units.yml" in scene_path:
-
                 print("F1")
                 unit_spec(scene_path,spec_list)
                 print("END")
-                
             elif r"\enroute_units.yml" in scene_path:
                 print("F2")
                 enroute_spec(scene_path,spec_list)
@@ -69,7 +67,6 @@ def UoC2(uoc_dir):
     print("Final")
     print(spec_list)
 UoC2(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")#####
-
 
 def spec_mod(path,spec_list):
     for item in spec_list:
