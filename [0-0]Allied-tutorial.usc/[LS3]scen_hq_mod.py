@@ -37,7 +37,7 @@ def scene_hq_mod(path):
         yaml.dump(temp,f)
     f.closed
 
-#scene_hq_mod(r"_packages\base\data\campaigns\tutorial.usc\scenarios\husky???\hqs.yml")
+#scene_hq_mod(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios\tutorial_93\hqs.yml")
 
 def UoC2(uoc_dir):
     scene_name_list=os.listdir(uoc_dir)
@@ -54,4 +54,4 @@ def UoC2(uoc_dir):
                 scene_hq_mod(scene_path)
                 print("END")
 
-UoC2(r"_packages\base\data\campaigns\tutorial.usc\scenarios")
+UoC2(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")
