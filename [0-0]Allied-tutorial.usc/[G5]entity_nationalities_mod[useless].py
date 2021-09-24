@@ -18,4 +18,4 @@ def nation_mod(path):
         yaml.dump(temp,f)
     f.closed
 
-nation_mod(r"_packages\base\data\entity_types\nationalities.yml")
+nation_mod(r"Unity of Command 2\_packages\base\data\entity_types\nationalities.yml")
