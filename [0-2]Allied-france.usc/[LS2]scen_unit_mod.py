@@ -86,11 +86,10 @@ def lut(path):
         else:
             gen_type.append("type1")
     #print(gen_type)
-    
     f.closed
     return id_list,country_list,faction_list,s_type_list,parent_list,gen_type
 
-id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut(r"_packages/base/data/campaigns/france.usc/units.yml")
+id_list,country_list,faction_list,s_type_list,parent_list,gen_type=lut(r"Unity of Command 2\_packages\base\data\campaigns\france.usc\units.yml")
 
 #unit_segment
 def unit_sgmnt(path):
@@ -140,7 +139,7 @@ def unit_sgmnt(path):
     #for item in temp:
     #    print(item)
 
-#unit_sgmnt(r"_packages\base\data\campaigns\france.usc\scenarios\barvenkovo_offensive\units.yml")
+#unit_sgmnt(r"Unity of Command 2\_packages\base\data\campaigns\france.usc\scenarios\barvenkovo_offensive\units.yml")
 
 #enroute_segment
 def enroute_sgmnt(path):
@@ -176,7 +175,7 @@ def enroute_sgmnt(path):
         yaml.dump(temp,f)
     f.closed
 
-#enroute_sgmnt(r"_packages\base\data\campaigns\france.usc\scenarios\barvenkovo_offensive\enroute_units.yml")
+#enroute_sgmnt(r"Unity of Command 2\_packages\base\data\campaigns\france.usc\scenarios\barvenkovo_offensive\enroute_units.yml")
 
 #prepositioned_assets_segment
 def prepos_sgmnt(path):
@@ -214,7 +213,6 @@ def prepos_sgmnt(path):
         yaml.dump(temp,f)
     f.closed
 
-
 def UoC2(uoc_dir):
     scene_name_list=os.listdir(uoc_dir)
     for scene_name in scene_name_list:
@@ -225,19 +223,16 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\units.yml" in scene_path:
-
                 print("F1")
                 unit_sgmnt(scene_path)
                 print("END")
-                
             elif r"\enroute_units.yml" in scene_path:
                 print("F2")
                 enroute_sgmnt(scene_path)
                 print("END")
-
             elif r"\prepositioned_assets.yml" in scene_path:
                 print("F3")
                 prepos_sgmnt(scene_path)
                 print("END")
 
-temp=UoC2(r"_packages\base\data\campaigns\france.usc\scenarios")
+temp=UoC2(r"Unity of Command 2\_packages\base\data\campaigns\france.usc\scenarios")
