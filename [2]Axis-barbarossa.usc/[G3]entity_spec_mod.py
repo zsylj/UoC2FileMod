@@ -65,7 +65,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(spec_list)
-UoC2(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
+UoC2(r"Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
 
 
 def spec_mod(path,spec_list):
@@ -87,4 +87,4 @@ def spec_mod(path,spec_list):
             yaml.dump(temp,f)
         f.closed
 
-spec_mod(r"_packages/base/data/entity_types/specialists/",spec_list)
+spec_mod(r"Unity of Command 2/_packages/base/data/entity_types/specialists/",spec_list)
