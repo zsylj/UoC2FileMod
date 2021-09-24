@@ -46,14 +46,12 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\bridges.yml" in scene_path:
-
                 print("F1")
                 bridge_mod(scene_path)
                 print("END")
-                
             elif r"\forts.yml" in scene_path:
                 print("F2")
                 fort_mod(scene_path)
                 print("END")
 
-temp=UoC2(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
+temp=UoC2(r"Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
