@@ -2,6 +2,10 @@ import os
 import re
 import yaml
 
+allied_check_list=["ff","ind","nz","pol","uk","us"]
+axis_check_list=["fin","ger","hun","ita","rom","vf"]
+soviet_check_list=["sov"]
+
 def unit_spec(path,spec_list):
     f=open(path,"r")
     unit_content=f.read()
@@ -10,7 +14,7 @@ def unit_spec(path,spec_list):
         if item["specs"]!=[]:
             for item2 in item["specs"]:
                 ind=item2["type"].find("_")
-                if item2["type"][0:ind]=="ger" and item2["type"] not in spec_list:
+                if item2["type"][0:ind] in axis_check_list and item2["type"] not in spec_list:#
                     spec_list.append(item2["type"])
                 else:
                     continue
@@ -28,7 +32,7 @@ def enroute_spec(path,spec_list):
         if item["unit"]["specs"]!=[]:
             for item2 in item["unit"]["specs"]:
                 ind=item2["type"].find("_")
-                if item2["type"][0:ind]=="ger" and item2["type"] not in spec_list:
+                if item2["type"][0:ind] in axis_check_list and item2["type"] not in spec_list:#
                     spec_list.append(item2["type"])
                 else:
                     continue
@@ -53,20 +57,16 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\units.yml" in scene_path:
-
                 print("F1")
                 unit_spec(scene_path,spec_list)
                 print("END")
-                
             elif r"\enroute_units.yml" in scene_path:
                 print("F2")
                 enroute_spec(scene_path,spec_list)
                 print("END")
-
     print("Final")
     print(spec_list)
-UoC2(r"Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
-
+UoC2(r"Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")#
 
 def spec_mod(path,spec_list):
     for item in spec_list:
