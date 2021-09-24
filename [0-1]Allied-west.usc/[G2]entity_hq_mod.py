@@ -42,7 +42,7 @@ def UoC2(uoc_dir):
 
     print("Final")
     print(hq_list)
-UoC2(r"_packages\base\data\campaigns\west.usc\scenarios")
+UoC2(r"Unity of Command 2\_packages\base\data\campaigns\west.usc\scenarios")
 
 def hq_mod(path,hq_list):
     for item in hq_list:
@@ -97,4 +97,4 @@ def hq_mod(path,hq_list):
                         yaml.dump(temp,f)
                     f.closed
         
-hq_mod(r"_packages/base/data/entity_types/hq_types/",hq_list)
+hq_mod(r"Unity of Command 2/_packages/base/data/entity_types/hq_types/",hq_list)
