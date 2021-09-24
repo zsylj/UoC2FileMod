@@ -19,6 +19,7 @@ def scene_hq_mod(path):
             for item2 in item["branch_levels"]:
                 print(item2)
                 item["branch_levels"][item2]["level"]=3
+                item["branch_levels"][item2]["suppressed"]=0
             for item3 in item["branches"]:
                 print(item3)
                 for item4 in item["branches"][item3]:
