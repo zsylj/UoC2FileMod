@@ -37,7 +37,7 @@ def scene_hq_mod(path):
         yaml.dump(temp,f)
     f.closed
 
-#scene_hq_mod(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios\hgs\hqs.yml")
+#scene_hq_mod(r"Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios\hgs\hqs.yml")
 
 def UoC2(uoc_dir):
     scene_name_list=os.listdir(uoc_dir)
@@ -49,9 +49,8 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\hqs.yml" in scene_path:
-
                 print("F1")
                 scene_hq_mod(scene_path)
                 print("END")
 
-UoC2(r"_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
+UoC2(r"Unity of Command 2\_packages\dlc2\data\campaigns\barbarossa.usc\scenarios")
