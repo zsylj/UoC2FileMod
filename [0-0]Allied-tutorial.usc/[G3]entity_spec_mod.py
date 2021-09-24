@@ -66,7 +66,7 @@ def UoC2(uoc_dir):
                 print("END")
     print("Final")
     print(spec_list)
-UoC2(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")#####
+UoC2(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\scenarios")#
 
 def spec_mod(path,spec_list):
     for item in spec_list:
