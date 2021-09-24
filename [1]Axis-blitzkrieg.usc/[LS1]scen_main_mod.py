@@ -26,9 +26,8 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\main.yml" in scene_path:
-
                 print("F1")
                 scene_main_mod(scene_path)
                 print("END")
 
-temp=UoC2(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
+temp=UoC2(r"Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
