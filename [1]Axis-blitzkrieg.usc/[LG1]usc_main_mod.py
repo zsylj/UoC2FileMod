@@ -35,14 +35,12 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\hqs.yml" in scene_path:
-
                 print("F1")
                 hq_id(scene_path,hq_id_list)
                 print("END")
-
     print("Final")
     print(hq_id_list)
-UoC2(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
+UoC2(r"Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\scenarios")
 
 def usc_main_mod(path,hq_id_list):
     f=open(path,"r")
@@ -56,4 +54,4 @@ def usc_main_mod(path,hq_id_list):
         yaml.dump(temp,f)
     f.closed
 
-usc_main_mod(r"_packages\dlc1\data\campaigns\blitzkrieg.usc\main.yml",hq_id_list)
+usc_main_mod(r"Unity of Command 2\_packages\dlc1\data\campaigns\blitzkrieg.usc\main.yml",hq_id_list)
