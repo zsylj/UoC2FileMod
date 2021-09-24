@@ -57,11 +57,9 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\units.yml" in scene_path:
-
                 print("F1")
                 unit_spec(scene_path,spec_list)
                 print("END")
-                
             elif r"\enroute_units.yml" in scene_path:
                 print("F2")
                 enroute_spec(scene_path,spec_list)
