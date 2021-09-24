@@ -46,7 +46,7 @@ def lut(path):
     rr_type_list=[]
     for item in type_list:
         ind=item.find("_")
-        if item[0:ind] in allied_fac:##############
+        if item[0:ind] in allied_fac:#
             if item in rr_type_list:
                 continue
             else:
@@ -54,13 +54,11 @@ def lut(path):
         else:
             continue
     print(rr_type_list)
-        
     f.closed
     return id_list,country_list,faction_list,rr_type_list
 
-id_list,country_list,faction_list,rr_type_list=lut(r"_packages/base/data/campaigns/tutorial.usc/units.yml")#################
+id_list,country_list,faction_list,rr_type_list=lut(r"Unity of Command 2\_packages\base\data\campaigns\tutorial.usc\units.yml")#
 
-#
 def unit_mod(path,rr_type_list):
     for item in rr_type_list:
         new_path=path+item+".yml"
@@ -80,4 +78,4 @@ def unit_mod(path,rr_type_list):
             yaml.dump(temp,f)
         f.closed
 
-unit_mod(r"_packages/base/data/entity_types/unit_types/",rr_type_list)
+unit_mod(r"Unity of Command 2/_packages/base/data/entity_types/unit_types/",rr_type_list)
