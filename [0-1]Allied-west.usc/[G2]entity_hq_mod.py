@@ -35,11 +35,9 @@ def UoC2(uoc_dir):
             UoC2(scene_path)
         else:
             if r"\hqs.yml" in scene_path:
-
                 print("F1")
                 hq(scene_path,hq_list)
                 print("END")
-
     print("Final")
     print(hq_list)
 UoC2(r"Unity of Command 2\_packages\base\data\campaigns\west.usc\scenarios")
