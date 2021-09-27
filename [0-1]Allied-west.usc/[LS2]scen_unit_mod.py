@@ -105,9 +105,9 @@ def unit_sgmnt(path):
             item["entr"]=2
             item["xp"]=300
             if gen_type[ind]=="type1":
-                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_spec_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_spec_42'}]
+                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_towed_arty_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_towed_at_42'}]
             else:
-                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_43_opt'}]
+                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_40'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_40'}]
         elif faction_list[ind]=="allied" and parent_list[ind]=="us":
             item["act_st"]=7
             item["sup_st"]=0
@@ -117,7 +117,7 @@ def unit_sgmnt(path):
             if gen_type[ind]=="type1":
                 item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_spec_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_towed_arty_42'}]
             else:
-                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_heavy_45_opt'}]
+                item["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_arty_42'}]
         elif faction_list[ind]=="axis":
             item["act_st"]=1
             item["sup_st"]=6
@@ -139,7 +139,7 @@ def unit_sgmnt(path):
     #for item in temp:
     #    print(item)
 
-#unit_sgmnt(r"Unity of Command 2\_packages\dlc3\data\campaigns\moscow.usc\scenarios\barvenkovo_offensive\units.yml")
+#unit_sgmnt(r"Unity of Command 2\_packages\dlc3\data\campaigns\west.usc\scenarios\tunis\units.yml")
 
 #enroute_segment
 def enroute_sgmnt(path):
@@ -154,9 +154,9 @@ def enroute_sgmnt(path):
             item["unit"]["sup_st"]=0
             item["unit"]["xp"]=300
             if gen_type[ind]=="type1":
-                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_spec_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_spec_42'}]
+                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_towed_arty_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_towed_at_42'}]
             else:
-                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_43_opt'}]
+                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_40'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_40'}]
         elif faction_list[ind]=="allied" and parent_list[ind]=="us":
             item["unit"]["act_st"]=7
             item["unit"]["sup_st"]=0
@@ -164,7 +164,7 @@ def enroute_sgmnt(path):
             if gen_type[ind]=="type1":
                 item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_spec_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_towed_arty_42'}]
             else:
-                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_heavy_45_opt'}]
+                item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_arty_42'}]
         elif faction_list[ind]=="axis":
             item["unit"]["act_st"]=0
             item["unit"]["sup_st"]=7
@@ -175,7 +175,7 @@ def enroute_sgmnt(path):
         yaml.dump(temp,f)
     f.closed
 
-#enroute_sgmnt(r"Unity of Command 2\_packages\dlc3\data\campaigns\moscow.usc\scenarios\barvenkovo_offensive\enroute_units.yml")
+#enroute_sgmnt(r"Unity of Command 2\_packages\dlc3\data\campaigns\west.usc\scenarios\overlord\enroute_units.yml")
 
 #prepositioned_assets_segment
 def prepos_sgmnt(path):
@@ -197,9 +197,9 @@ def prepos_sgmnt(path):
                 item["unit"]["sup_st"]=0
                 item["unit"]["xp"]=300
                 if gen_type[ind]=="type1":
-                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_spec_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_spec_42_opt'}]
+                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_towed_arty_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_towed_at_42'}]
                 else:
-                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_43_opt'}]
+                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'uk_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'uk_armx_40'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'uk_heavy_40'}]
             elif parent_list[ind]=="us":
                 item["unit"]["act_st"]=7
                 item["unit"]["sup_st"]=0
@@ -207,7 +207,7 @@ def prepos_sgmnt(path):
                 if gen_type[ind]=="type1":
                     item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_eng_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_spec_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_towed_arty_42'}]
                 else:
-                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42_opt'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_heavy_45_opt'}]        
+                    item["unit"]["specs"]=[{'active': True, 'captured': False, 'idx': 8, 'type': 'us_recon_42'}, {'active': True, 'captured': False, 'idx': 9, 'type': 'us_armx_42'}, {'active': True, 'captured': False, 'idx': 10, 'type': 'us_arty_42'}]        
     f.closed
     with open(path,"w") as f:
         yaml.dump(temp,f)
