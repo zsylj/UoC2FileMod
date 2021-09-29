@@ -1,10 +1,5 @@
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
 |country_name_brief_prefix|country_name_full|Chinese|
-|----|----|----|
+|:----:|:----:|:----:|
 |bel|Belgium|比利时王国|
 |can|Canada|加拿大|
 |ff|Free_France|自由法国|
