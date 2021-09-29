@@ -1,8 +1,8 @@
-|country_name_brief_prefix|country_name_full|Chinese|
+|Prefix<br>前缀<br>|Name Origin<br>名称来源<br>|Chinese<br>中文<br>|
 |:----:|:----:|:----:|
 |bel|Belgium|比利时王国|
 |can|Canada|加拿大|
-|ff|Free_France|自由法国|
+|ff|Free France|自由法国|
 |fin|Finland|芬兰共和国|
 |fr|France|法兰西第三共和国|
 |ger|Germany|德意志帝国|
