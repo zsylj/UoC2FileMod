@@ -1,6 +1,6 @@
-|Prefix<br>前缀<br>|Name Origin<br>名称来源<br>|Chinese<br>中文<br>|
+|Prefix<br>前缀<br>|Name Origin<br>名称来源<br>|Official Name<br>官方称谓<br>|
 |:----:|:----:|:----:|
-|bel|Belgium|比利时王国|
+|bel|Belgium|Koninkrijk België<br>Royaume de Belgique<br>Königreich Belgien<br>Kingdom of Belgium<br>比利时王国<br>|
 |can|Canada|加拿大自治领|
 |ff|Free France|自由法国|
 |fin|Finland|芬兰共和国|
